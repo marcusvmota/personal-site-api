@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('./config/dotenv');
 
 const { initDatabase } = require('./config/db');
 const cors = require('cors');
@@ -31,6 +31,7 @@ initDatabase();
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
+
 })
 
 
